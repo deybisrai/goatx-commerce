@@ -1,3 +1,5 @@
 django==5.0
 Pillow
 mysqlclient
+django-admin-tailwind
+setuptools<82
