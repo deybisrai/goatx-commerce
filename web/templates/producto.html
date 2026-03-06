@@ -69,19 +69,20 @@
             <div class="variations_form cart">
                 <p class="prod-price">S/ {{producto.precio}}</p>
                 <p class="prod-excerpt">{{producto.descripcion}}...
-                    <a id="prod-showdesc" class="prod-excerpt-more" href="#">read more</a></p>
+                    <a id="prod-showdesc" class="prod-excerpt-more" href="#">Leer más...</a></p>
                 <div class="prod-add">
-                    <form action="#" method="post">
+                    <form action="{% url 'web:agregarCarrito' producto.id %}" method="post">
                         {% csrf_token %}
                         <div class="variations">
                             <div class="variations-row">
-                                <div class="label"><label >Сolor</label></div>
+                                <div class="label"><label >Talla</label></div>
                                 <div class="value">
                                     <select>
-                                        <option value="">Choose an option</option>
-                                        <option value="blue">Blue</option>
-                                        <option value="green">Green</option>
-                                        <option value="yellow">Yellow</option>
+                                        <option value="">Elige una opción</option>
+                                        <option value="blue">S</option>
+                                        <option value="green">M</option>
+                                        <option value="yellow">L</option>
+                                        <option value="yellow">XL</option>
                                     </select>
                                 </div>
                             </div>
