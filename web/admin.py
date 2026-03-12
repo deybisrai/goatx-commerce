@@ -11,4 +11,3 @@ class productoAdmin(admin.ModelAdmin):
     list_display = ('nombre','precio','categoria')
     list_editable = ()
     
-

@@ -4,7 +4,7 @@
             <i class="ion-android-cart"></i>
             <span>{{request.session.cartCantidad|default:0}}</span>
         </p>
-        <p class="h-cart-total">S/ {{request.session.cartMontoTotal}}</p>
+        <p class="h-cart-total">S/ {{request.session.cartMontoTota|default:0}}</p>
     </a>
     <div class="widget_shopping_cart">
         <div class="widget_shopping_cart_content">
